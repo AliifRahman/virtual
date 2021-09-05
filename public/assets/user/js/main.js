@@ -123,18 +123,44 @@
 	});
 	
 	// Modal Sign In
-	$('#sign-in').magnificPopup({
-		type: 'inline',
-		fixedContentPos: true,
-		fixedBgPos: true,
-		overflowY: 'auto',
-		closeBtnInside: true,
-		preloader: false,
-		midClick: true,
-		removalDelay: 300,
-		closeMarkup: '<button title="%title%" type="button" class="mfp-close"></button>',
-		mainClass: 'my-mfp-zoom-in'
-	});
+    $('#sign-in').magnificPopup({
+        type: 'inline',
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close"></button>',
+        mainClass: 'my-mfp-zoom-in'
+    });
+    $('#sign-in-2').magnificPopup({
+        type: 'inline',
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close"></button>',
+        mainClass: 'my-mfp-zoom-in'
+    });
+
+    // Modal Sign Up
+    $('#sign-up').magnificPopup({
+        type: 'inline',
+        fixedContentPos: true,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close"></button>',
+        mainClass: 'my-mfp-zoom-in'
+    });
 
 	// Modal generic
 	$('#modal').magnificPopup({
@@ -420,5 +446,20 @@
 	    }).trigger('resize');
 	});
 	
+	$('input[name="dates"]').daterangepicker({
+		autoUpdateInput: false,
+		parentEl: '.scroll-fix',
+		minDate: new Date(),
+		opens: 'left',
+		locale: {
+			cancelLabel: 'Clear'
+		}
+	});
+	$('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
+		$(this).val(picker.startDate.format('MM-DD-YY') + ' > ' + picker.endDate.format('MM-DD-YY'));
+	});
+	$('input[name="dates"]').on('cancel.daterangepicker', function(ev, picker) {
+		$(this).val('');
+	});
 })(window.jQuery); 
 
