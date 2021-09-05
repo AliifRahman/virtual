@@ -1,7 +1,7 @@
 import React from 'react';
-import Breadcrumbs from '../../Components/seller-section/Breadcrumbs';
+import Breadcrumbs from '../../components/seller-section/Breadcrumbs';
 import Select from 'react-select';
-import CardRoom from '../../Components/seller-section/CardRoom';
+import CardRoom from '../../components/seller-section/CardRoom';
 
 function DataRuangan(props) {
     const options = [

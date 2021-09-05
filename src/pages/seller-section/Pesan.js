@@ -1,6 +1,6 @@
 import React from 'react';
-import Breadcrumbs from '../../Components/seller-section/Breadcrumbs';
-import CardMessages from '../../Components/seller-section/CardMessages';
+import Breadcrumbs from '../../components/seller-section/Breadcrumbs';
+import CardMessages from '../../components/seller-section/CardMessages';
 
 function Pesan(props) {
     return (

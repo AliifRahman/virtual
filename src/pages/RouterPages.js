@@ -4,7 +4,7 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import Navbar from '../Components/seller-section/Navbar';
+import Navbar from '../components/seller-section/Navbar';
 import DataRuangan from './seller-section/DataRuangan';
 import DataTransaksi from './seller-section/DataTransaksi';
 import Home from './seller-section/Home';

@@ -1,6 +1,6 @@
 import React from 'react';
-import Breadcrumbs from '../../Components/seller-section/Breadcrumbs';
-import CardTransaction from '../../Components/seller-section/CardTransaction';
+import Breadcrumbs from '../../components/seller-section/Breadcrumbs';
+import CardTransaction from '../../components/seller-section/CardTransaction';
 import Select from 'react-select';
 
 function TransaksiMasuk(props) {

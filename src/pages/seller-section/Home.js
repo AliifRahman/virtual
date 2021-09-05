@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Breadcrumbs from '../../Components/seller-section/Breadcrumbs';
-import Tables from '../../Components/seller-section/Tables';
+import Breadcrumbs from '../../components/seller-section/Breadcrumbs';
+import Tables from '../../components/seller-section/Tables';
 
 function Home(props) {
     return (

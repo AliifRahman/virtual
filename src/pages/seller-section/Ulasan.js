@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
-import Breadcrumbs from '../../Components/seller-section/Breadcrumbs';
-import CardReview from '../../Components/seller-section/CardReview';
+import Breadcrumbs from '../../components/seller-section/Breadcrumbs';
+import CardReview from '../../components/seller-section/CardReview';
 
 function Ulasan(props) {
     const options = [

@@ -1,6 +1,6 @@
 import React from 'react';
-import Breadcrumbs from '../../Components/seller-section/Breadcrumbs';
-import TimeInput from '../../Components/seller-section/TimeInput';
+import Breadcrumbs from '../../components/seller-section/Breadcrumbs';
+import TimeInput from '../../components/seller-section/TimeInput';
 
 function TambahRuangan(props) {
     return (
