@@ -1170,7 +1170,7 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
   }
 }
 .hero_in.tours_detail:before {
-  background: url(../img/hero_in_tours_detail.jpg) center center no-repeat;
+  background: url(../img/room-1.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1247,7 +1247,7 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
   height: 100%;
 }
 .hero_in .wrapper h1 {
-  color: #fff;
+  color: #fff !important;
   font-size: 42px;
   font-size: 2.625rem;
   text-transform: uppercase;
@@ -3626,7 +3626,7 @@ a.box_feat h3 {
   position: absolute;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.6);
-  right: 20px;
+  left: 20px;
   top: 20px;
   text-transform: uppercase;
   color: #ccc;
@@ -5192,7 +5192,7 @@ span.infobox_rate {
 .bs-wizard > .bs-wizard-step {
   padding: 0;
   position: relative;
-  width: 33.33%;
+  width: 50%;
   float: left;
 }
 .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
@@ -5510,7 +5510,6 @@ ul.cart_details li span {
 }
 #confirm p {
   font-size: 16px !important;
-  font-size: 16px !important/16pxrem;
   margin-bottom: 0;
 }
 
@@ -5620,10 +5619,8 @@ ul.cart_details li span {
   padding: 15% 0;
   width: 100%;
   height: 100%;
-  background-color: black;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
-  font-size: 14px;
   font-size: 0.875rem;
   opacity: 0;
   -moz-transition: all 0.3s ease-in-out;
@@ -8310,7 +8307,7 @@ ul.bullets li:before {
 }
 
 /*-------- 3.7 Sing In Modal --------*/
-#sign-in-dialog {
+#sign-in-dialog, #sign-up-dialog {
   background: #fff;
   padding: 30px;
   padding-top: 0;
@@ -8327,6 +8324,7 @@ ul.bullets li:before {
 
 /* Popup close button*/
 #sign-in-dialog .mfp-close,
+#sign-up-dialog .mfp-close,
 #lang-dialog .mfp-close {
   color: #666;
   background-color: #e4e4e4;
@@ -8342,11 +8340,13 @@ ul.bullets li:before {
 }
 
 #sign-in-dialog .mfp-close:hover,
+#sign-up-dialog .mfp-close:hover,
 #lang-dialog .mfp-close:hover {
   color: #fff;
   background-color: #66676b;
 }
 
+#sign-in-dialog .mfp-close:before, 
 #sign-in-dialog .mfp-close:before {
   font-size: 24px;
   font-family: 'ElegantIcons';
@@ -8376,20 +8376,23 @@ ul.bullets li:before {
   font-weight: 500;
 }
 
-#sign-in-dialog .form-group {
+#sign-in-dialog .form-group, 
+#sign-up-dialog .form-group {
   position: relative;
 }
 
-#sign-in-dialog .form-group input.form-control {
+#sign-in-dialog .form-group input.form-control,
+#sign-up-dialog .form-group input.form-control {
   padding-left: 40px;
 }
 
-#sign-in-dialog .form-group i {
+#sign-in-dialog .form-group i,
+#sign-up-dialog .form-group i {
   font-size: 21px;
   font-size: 1.3125rem;
   position: absolute;
   left: 12px;
-  top: 34px;
+  top: 40px;
   color: #ccc;
   width: 25px;
   height: 25px;
@@ -8397,7 +8400,8 @@ ul.bullets li:before {
   font-weight: 400 !important;
 }
 
-#sign-in-dialog .form-group i.icon_lock_alt {
+#sign-in-dialog .form-group i.icon_lock_alt,
+#sign-up-dialog .form-group i.icon_lock_alt {
   top: 36px;
 }
 
@@ -8458,7 +8462,8 @@ a#forgot {
   font-weight: 500;
 }
 
-.sign-in-wrapper {
+.sign-in-wrapper,
+.sign-up-wrapper {
   position: relative;
   height: 100%;
 }
@@ -9201,3 +9206,4 @@ ul.plan-features {
     display: none;
   }
 }
+
