@@ -12,7 +12,7 @@ function Home(props) {
             {/* <!-- Icon Cards--> */}
             <div className="row">
                 <div className="col-xl-3 col-sm-6 mb-3">
-                    <div className="card dashboard text-white bg-primary o-hidden h-100">
+                    <div className="card dashboard o-hidden text-white bg-primary h-100">
                         <div className="card-body">
                             <div className="card-body-icon">
                                 <i className="fa fa-fw fa-envelope-open"></i>
@@ -86,5 +86,7 @@ function Home(props) {
         </div>
     );
 }
+
+// document.writeln("<link href='assets/seller-section/css/admin.css' rel='stylesheet'>");
 
 export default Home;
