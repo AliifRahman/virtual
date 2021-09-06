@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../../Components/user/Header'
 import Footer from '../../../Components/user/Footer'
+import { NavLink } from 'react-router-dom';
 
 
 function ListRoom(){
@@ -180,11 +181,11 @@ function ListRoom(){
                                 <div className="col-lg-6 col-md-6 item-group">
                                     <figure>
                                     <small>Museum</small>
-                                    <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
+                                    <NavLink to="/detailroom"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></NavLink>
                                     </figure>
                                     <div className="wrapper">
                                     <a href="#0" className="wish_bt" />
-                                    <h3><a href="tour-detail.html">Louvre</a></h3>
+                                    <h3><NavLink to="/detailroom">Louvre</NavLink></h3>
                                     <span className="price">From <strong>$54</strong> /per person</span>
                                     </div>
                                     <ul>

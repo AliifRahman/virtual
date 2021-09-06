@@ -7,11 +7,17 @@ import {
 import Navbar from '../Components/seller-section/Navbar';
 import DataRuangan from './seller-section/DataRuangan';
 import DataTransaksi from './seller-section/DataTransaksi';
-import Home from './seller-section/Home';
+import HomeSeller from './seller-section/Home';
 import Pesan from './seller-section/Pesan';
 import TambahRuangan from './seller-section/TambahRuangan';
 import TransaksiMasuk from './seller-section/TransaksiMasuk';
 import Ulasan from './seller-section/Ulasan';
+import HomeUser from './user/Home/Home'
+import DetailRoom from './user/DetailRoom/DetailRoom';
+import ListRoom from './user/ListRoom/ListRoom';
+import Cart from './user/Purchase/Cart';
+import Complete from './user/Purchase/Complete';
+import WishList from './user/WishList/WishList';
 
 function RouterPages(props) {
     return (
@@ -23,7 +29,7 @@ function RouterPages(props) {
                             <Navbar />
                             <div className="content-wrapper">
                                 <div className="container-fluid">
-                                    <Home />
+                                    <HomeSeller />
                                 </div>
                             </div>
                         </div>
@@ -88,6 +94,24 @@ function RouterPages(props) {
                                 </div>
                             </div>
                         </div>
+                    </Route>
+                    <Route path="/listroom">
+                            <ListRoom />
+                    </Route>
+                    <Route path="/detailroom">
+                            <DetailRoom />
+                    </Route>
+                    <Route path="/purchase">
+                            <Cart />
+                    </Route>
+                    <Route path="/complete">
+                            <Complete />
+                    </Route>
+                    <Route path="/wishlist">
+                            <WishList />
+                    </Route>
+                    <Route path="/">
+                            <HomeUser />
                     </Route>
                 </Switch>
             </Router>

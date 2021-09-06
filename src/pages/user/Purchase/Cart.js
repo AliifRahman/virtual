@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../../Components/user/Header'
 import Footer from '../../../Components/user/Footer'
+import { NavLink } from 'react-router-dom';
 
 function Cart(){
     return(
@@ -170,7 +171,7 @@ function Cart(){
                                     <li>dari <span>02-11-18</span></li>
                                     <li>sampai <span>04-11-18</span></li>
                                 </ul>
-                                <a href="cart-3.html" className="btn_1 full-width purchase">Purchase</a>
+                                <NavLink to="/complete" className="btn_1 full-width purchase">Purchase</NavLink>
                                 <div className="text-center"><small>No money charged in this step</small></div>
                                 </div>
                             </aside>

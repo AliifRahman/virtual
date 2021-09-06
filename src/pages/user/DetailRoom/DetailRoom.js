@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../../Components/user/Header'
 import Footer from '../../../Components/user/Footer'
+import { NavLink } from 'react-router-dom';
 
 function DetailRoom(){
     return (
@@ -318,7 +319,7 @@ function DetailRoom(){
                                     <input className="form-control" type="text" name="dates" placeholder="Tanggal" />
                                     <i className="icon_calendar" />
                                 </div>
-                                <a href="cart-1.html" className="btn_1 full-width purchase">Purchase</a>
+                                <NavLink to="/purchase" className="btn_1 full-width purchase">Purchase</NavLink>
                                 <a href="wishlist.html" className="btn_1 full-width outline wishlist"><i className="icon_heart" /> Add to wishlist</a>
                                 <div className="text-center"><small>No money charged in this step</small></div>
                                 </div>
