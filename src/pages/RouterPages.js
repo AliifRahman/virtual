@@ -13,6 +13,18 @@ import TambahRuangan from './seller-section/TambahRuangan';
 import TransaksiMasuk from './seller-section/TransaksiMasuk';
 import Ulasan from './seller-section/Ulasan';
 
+import MessageAdmin from '../Components/MessageAdmin';
+import NavbarAdmin from '../Components/NavbarAdmin';
+import BookingAdmin from '../Components/BookingAdmin';
+import ListingAdmin from '../Components/ListingAdmin';
+import ReviewsAdmin from '../Components/ReviewsAdmin';
+import BookmarksAdmin from '../Components/BookmarksAdmin';
+import AddlistingAdmin from '../Components/AddlistingAdmin';
+import MyprofileAdmin from '../Components/MyprofileAdmin';
+import ChartsAdmin from '../Components/ChartsAdmin';
+import TablesAdmin from '../Components/TablesAdmin';
+
+
 function RouterPages(props) {
     return (
         <div>
@@ -89,6 +101,40 @@ function RouterPages(props) {
                             </div>
                         </div>
                     </Route>
+        
+                <Route exact path="/">
+                    <NavbarAdmin/>
+                </Route>
+                <Route path="/messageadmin">
+                    <MessageAdmin/>
+                </Route>
+                <Route path="/bookingadmin">
+                    <BookingAdmin/>
+                </Route>
+                <Route path="/listingadmin">
+                    <ListingAdmin/>
+                </Route>
+                <Route path="/reviewsadmin">
+                    <ReviewsAdmin/>
+                </Route>
+                <Route path="/bookmarksadmin">
+                    <BookmarksAdmin/>
+                </Route>
+                <Route path="/addlistingadmin">
+                    <AddlistingAdmin/>
+                </Route>
+                <Route path="/myprofileadmin">
+                    <MyprofileAdmin/>
+                </Route>
+                <Route path="/chartsadmin">
+                    <ChartsAdmin/>
+                </Route>
+                <Route path="/tablesadmin">
+                    <TablesAdmin/>
+                </Route>
+            </Switch>
+        
+        
                 </Switch>
             </Router>
         </div>
