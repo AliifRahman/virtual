@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return(
@@ -14,7 +15,7 @@ function Header() {
                 </div>
                 <ul id="top_menu">
                     <li><a href="#sign-in-dialog" id="sign-in" className="login" title="Sign In">Sign In</a></li>
-                    <li><a href="wishlist.html" className="wishlist_bt_top" title="Your wishlist">Your wishlist</a></li>
+                    <li><NavLink to="/wishlist" className="wishlist_bt_top" title="Your wishlist">Your wishlist</NavLink></li>
                 </ul>
                 <a href="#menu" className="btn_mobile">
                     <div className="hamburger hamburger--spin" id="hamburger">
@@ -27,22 +28,22 @@ function Header() {
                     <ul>
                     <li><span><a href="#0">Meeting &amp; Event</a></span>
                         <ul>
-                        <li><a href="#">Ruang Meeting</a></li>
-                        <li><a href="#">Ruang Acara</a></li>
+                        <li><NavLink to="/listroom">Ruang Meeting</NavLink></li>
+                        <li><NavLink to="/listroom">Ruang Acara</NavLink></li>
                         </ul>
                     </li>
                     <li><span><a href="#0">Workspace</a></span>
                         <ul>
-                        <li><a href="#">Ruang Kantor</a></li>
-                        <li><a href="#">Coworking Desk</a></li>
-                        <li><a href="#">Co-living</a></li>
+                        <li><NavLink to="/listroom">Ruang Kantor</NavLink></li>
+                        <li><NavLink to="/listroom">Coworking Desk</NavLink></li>
+                        <li><NavLink to="/listroom">Co-living</NavLink></li>
                         </ul>
                     </li>
                     <li><span><a href="#0">Virtual Office</a></span>
                         <ul>
-                        <li><a href="#">Virtual Office</a></li>
-                        <li><a href="#">Virtual Office &amp; Pendirian PT</a></li>
-                        <li><a href="#">Pendirian PT</a></li>
+                        <li><NavLink to="/listroom">Virtual Office</NavLink></li>
+                        <li><NavLink to="/listroom">Virtual Office &amp; Pendirian PT</NavLink></li>
+                        <li><NavLink to="/listroom">Pendirian PT</NavLink></li>
                         </ul>
                     </li>
                     <li><span><a href="#">Paket Meeting</a></span></li>

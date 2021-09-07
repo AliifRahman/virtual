@@ -1,6 +1,7 @@
 import React from 'react'
-import Header from '../../../Components/user/Header'
-import Footer from '../../../Components/user/Footer'
+import Header from '../../../components/user/Header'
+import Footer from '../../../components/user/Footer'
+import { NavLink } from 'react-router-dom';
 
 
 function ListRoom(){
@@ -180,11 +181,11 @@ function ListRoom(){
                                 <div className="col-lg-6 col-md-6 item-group">
                                     <figure>
                                     <small>Museum</small>
-                                    <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
+                                    <NavLink to="/detailroom"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></NavLink>
                                     </figure>
                                     <div className="wrapper">
                                     <a href="#0" className="wish_bt" />
-                                    <h3><a href="tour-detail.html">Louvre</a></h3>
+                                    <h3><NavLink to="/detailroom">Louvre</NavLink></h3>
                                     <span className="price">From <strong>$54</strong> /per person</span>
                                     </div>
                                     <ul>
@@ -347,94 +348,95 @@ function ListRoom(){
                     </main>
                     </div>
                     <div>
-  {/* Sign In Popup */}
-  <div id="sign-in-dialog" className="zoom-anim-dialog mfp-hide">
-    <div className="small-dialog-header">
-      <h3>Sign In</h3>
-    </div>
-    <form>
-      <div className="sign-in-wrapper">
-        <a href="#0" className="social_bt facebook">Login with Facebook</a>
-        <a href="#0" className="social_bt google">Login with Google</a>
-        <div className="divider"><span>Or</span></div>
-        <div className="form-group">
-          <label>Email</label>
-          <input type="email" className="form-control" name="email" id="email" />
-          <i className="icon_mail_alt" />
-        </div>
-        <div className="form-group">
-          <label>Password</label>
-          <input type="password" className="form-control" name="password" id="password" defaultValue />
-          <i className="icon_lock_alt" />
-        </div>
-        <div className="clearfix add_bottom_15">
-          <div className="checkboxes float-left">
-            <label className="container_check">Remember me
-              <input type="checkbox" />
-              <span className="checkmark" />
-            </label>
-          </div>
-          <div className="float-right mt-1"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
-        </div>
-        <div className="text-center"><input type="submit" defaultValue="Log In" className="btn_1 full-width" /></div>
-        <div className="text-center">
-          Don’t have an account? <a href="#sign-up-dialog" id="sign-up">Sign up</a>
-        </div>
-        <div id="forgot_pw">
-          <div className="form-group">
-            <label>Please confirm login email below</label>
-            <input type="email" className="form-control" name="email_forgot" id="email_forgot" />
-            <i className="icon_mail_alt" />
-          </div>
-          <p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
-          <div className="text-center"><input type="submit" defaultValue="Reset Password" className="btn_1" /></div>
-        </div>
-      </div>
-    </form>
-    {/*form */}
-  </div>
-  {/* /Sign In Popup */}
-  {/* Sign Up Popup */}
-  <div id="sign-up-dialog" className="zoom-anim-dialog mfp-hide">
-    <div className="small-dialog-header">
-      <h3>Sign Up</h3>
-    </div>
-    <div className="sign-up-wrapper">
-      <form autoComplete="off">
-        <div className="form-group">
-          <label>Your Name</label>
-          <input className="form-control" type="text" />
-          <i className="ti-user" />
-        </div>
-        <div className="form-group">
-          <label>Your Last Name</label>
-          <input className="form-control" type="text" />
-          <i className="ti-user" />
-        </div>
-        <div className="form-group">
-          <label>Your Email</label>
-          <input className="form-control" type="email" />
-          <i className="icon_mail_alt" />
-        </div>
-        <div className="form-group">
-          <label>Your password</label>
-          <input className="form-control" type="password" id="password1" />
-          <i className="icon_lock_alt" />
-        </div>
-        <div className="form-group">
-          <label>Confirm password</label>
-          <input className="form-control" type="password" id="password2" />
-          <i className="icon_lock_alt" />
-        </div>
-        <div id="pass-info" className="clearfix" />
-        <a href="#0" className="btn_1 rounded full-width add_top_30">Register Now!</a>
-        <div className="text-center add_top_10">Already have an acccount? <strong><a href="#sign-in-dialog" id="sign-in-2">Sign In</a></strong></div>
-      </form>
-    </div>
-    {/*form */}
-  </div>
-  {/* /Sign Up Popup */}
-</div>
+                    <Footer />
+                    {/* Sign In Popup */}
+                    <div id="sign-in-dialog" className="zoom-anim-dialog mfp-hide">
+                        <div className="small-dialog-header">
+                        <h3>Sign In</h3>
+                        </div>
+                        <form>
+                        <div className="sign-in-wrapper">
+                            <a href="#0" className="social_bt facebook">Login with Facebook</a>
+                            <a href="#0" className="social_bt google">Login with Google</a>
+                            <div className="divider"><span>Or</span></div>
+                            <div className="form-group">
+                            <label>Email</label>
+                            <input type="email" className="form-control" name="email" id="email" />
+                            <i className="icon_mail_alt" />
+                            </div>
+                            <div className="form-group">
+                            <label>Password</label>
+                            <input type="password" className="form-control" name="password" id="password" defaultValue />
+                            <i className="icon_lock_alt" />
+                            </div>
+                            <div className="clearfix add_bottom_15">
+                            <div className="checkboxes float-left">
+                                <label className="container_check">Remember me
+                                <input type="checkbox" />
+                                <span className="checkmark" />
+                                </label>
+                            </div>
+                            <div className="float-right mt-1"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
+                            </div>
+                            <div className="text-center"><input type="submit" defaultValue="Log In" className="btn_1 full-width" /></div>
+                            <div className="text-center">
+                            Don’t have an account? <a href="#sign-up-dialog" id="sign-up">Sign up</a>
+                            </div>
+                            <div id="forgot_pw">
+                            <div className="form-group">
+                                <label>Please confirm login email below</label>
+                                <input type="email" className="form-control" name="email_forgot" id="email_forgot" />
+                                <i className="icon_mail_alt" />
+                            </div>
+                            <p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
+                            <div className="text-center"><input type="submit" defaultValue="Reset Password" className="btn_1" /></div>
+                            </div>
+                        </div>
+                        </form>
+                        {/*form */}
+                    </div>
+                    {/* /Sign In Popup */}
+                    {/* Sign Up Popup */}
+                    <div id="sign-up-dialog" className="zoom-anim-dialog mfp-hide">
+                        <div className="small-dialog-header">
+                        <h3>Sign Up</h3>
+                        </div>
+                        <div className="sign-up-wrapper">
+                        <form autoComplete="off">
+                            <div className="form-group">
+                            <label>Your Name</label>
+                            <input className="form-control" type="text" />
+                            <i className="ti-user" />
+                            </div>
+                            <div className="form-group">
+                            <label>Your Last Name</label>
+                            <input className="form-control" type="text" />
+                            <i className="ti-user" />
+                            </div>
+                            <div className="form-group">
+                            <label>Your Email</label>
+                            <input className="form-control" type="email" />
+                            <i className="icon_mail_alt" />
+                            </div>
+                            <div className="form-group">
+                            <label>Your password</label>
+                            <input className="form-control" type="password" id="password1" />
+                            <i className="icon_lock_alt" />
+                            </div>
+                            <div className="form-group">
+                            <label>Confirm password</label>
+                            <input className="form-control" type="password" id="password2" />
+                            <i className="icon_lock_alt" />
+                            </div>
+                            <div id="pass-info" className="clearfix" />
+                            <a href="#0" className="btn_1 rounded full-width add_top_30">Register Now!</a>
+                            <div className="text-center add_top_10">Already have an acccount? <strong><a href="#sign-in-dialog" id="sign-in-2">Sign In</a></strong></div>
+                        </form>
+                        </div>
+                        {/*form */}
+                    </div>
+                    {/* /Sign Up Popup */}
+                    </div>
 
             </div>
         </React.Fragment>

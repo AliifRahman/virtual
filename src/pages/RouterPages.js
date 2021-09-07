@@ -12,12 +12,27 @@ import Pesan from './seller-section/Pesan';
 import TambahRuangan from './seller-section/TambahRuangan';
 import TransaksiMasuk from './seller-section/TransaksiMasuk';
 import Ulasan from './seller-section/Ulasan';
+import DetailRoom from './user/DetailRoom/DetailRoom';
+import Index from './user/Index/Index';
+import ListRoom from './user/ListRoom/ListRoom';
+import Cart from './user/Purchase/Cart';
+import Complete from './user/Purchase/Complete';
+import RegisterRoom from './user/RegisterRoom/RegisterRoom';
+import WishList from './user/WishList/WishList';
 
 function RouterPages(props) {
     return (
         <div>
             <Router>
                 <Switch>
+                    <Route exact path = "/" component= {Index}/>
+                    <Route exact path = "/details" component = {DetailRoom} />
+                    <Route exact path = "/list" component = {ListRoom} />
+                    <Route exact path = "/cart" component= {Cart}/>
+                    <Route exact path = "/purchase" component = {Complete} />
+                    <Route exact path = "/add-room" component = {RegisterRoom} />
+                    <Route exact path = "/wishlist" component = {WishList} />   
+ 
                     <Route exact path="/seller">
                         <div className="fixed-nav sticky-footer">
                             <Navbar />
@@ -27,7 +42,6 @@ function RouterPages(props) {
                                 </div>
                             </div>
                         </div>
-
                     </Route>
                     <Route path="/seller-pesan">
                         <div className="fixed-nav sticky-footer">

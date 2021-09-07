@@ -1,24 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import ListRoom from './pages/user/ListRoom/ListRoom';
-import Home from './pages/user/Home/Home';
-import RegisterRoom from './pages/user/RegisterRoom/RegisterRoom';
 import RouterPages from './pages/RouterPages';
-import DetailRoom from './pages/user/DetailRoom/DetailRoom';
-import Cart from './pages/user/Purchase/Cart';
-import Complete from './pages/user/Purchase/Complete';
-import WishList from './pages/user/WishList/WishList';
-import HomeSeller from './pages/seller-section/Home'
-
 
 function App() {
   return (
     <div className="App">
-      <RegisterRoom />
+      <RouterPages />
     </div>
   );
 }
-
 
 //External Link JS
 document.writeln("<script type='text/javascript' src='assets/user/js/main.js'></script>");
