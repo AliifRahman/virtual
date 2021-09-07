@@ -472,7 +472,7 @@ function Home(props) {
                 </section> 
             </div>
             
-            <div className="container container-custom margin_80_55">
+            <div className="container container-custom margin_80_55 bg_color1">
                 <section className="add_bottom_45">
                 <div className="main_title_2">
                     <span><em /></span>
