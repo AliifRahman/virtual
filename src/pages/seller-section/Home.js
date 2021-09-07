@@ -3,12 +3,10 @@ import { NavLink } from 'react-router-dom';
 import Breadcrumbs from '../../components/seller-section/Breadcrumbs';
 import Tables from '../../components/seller-section/Tables';
 
-function Home(props) {
+function Home() {
     return (
         <div>
-            <Breadcrumbs 
-                title="My Dashboard"
-            />
+            <Breadcrumbs title="My Dashboard"/>
             {/* <!-- Icon Cards--> */}
             <div className="row">
                 <div className="col-xl-3 col-sm-6 mb-3">

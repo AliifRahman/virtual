@@ -23,9 +23,7 @@ function TransaksiMasuk(props) {
 
     return (
         <div>
-            <Breadcrumbs 
-                title="Transaksi Masuk"
-            />
+            <Breadcrumbs title="Transaksi Masuk" />
             <div className="box_general">
                 <div className="header_box">
                     <h2 className="d-inline-block">Daftar Transaksi</h2>

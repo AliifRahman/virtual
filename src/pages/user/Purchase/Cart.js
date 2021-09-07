@@ -271,9 +271,9 @@ function Cart(){
                             {/*form */}
                         </div>
                         {/* /Sign Up Popup */}
-            </div>
-        </React.Fragment>
-    )
+                </div>
+         </React.Fragment>
+       )
 }
 
 export default Cart;

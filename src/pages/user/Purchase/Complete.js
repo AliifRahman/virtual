@@ -127,9 +127,9 @@ function Complete(){
                             {/*form */}
                         </div>
                         {/* /Sign Up Popup */}
-            </div>
+               </div>
         </React.Fragment>
-    )
+      )
 }
 
 export default Complete;

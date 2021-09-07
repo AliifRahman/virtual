@@ -4,9 +4,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 function MyProfile(props) {
     return (
         <div>
-            <Breadcrumbs 
-                title="My Profile"
-            />
+            <Breadcrumbs title="My Profile"/>
         </div>
     );
 }

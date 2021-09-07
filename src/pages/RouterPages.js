@@ -20,7 +20,7 @@ import Complete from './user/Purchase/Complete';
 import RegisterRoom from './user/RegisterRoom/RegisterRoom';
 import WishList from './user/WishList/WishList';
 
-function RouterPages(props) {
+function RouterPages() {
     return (
         <div>
             <Router>

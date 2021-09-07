@@ -5,9 +5,7 @@ import TimeInput from '../../components/seller-section/TimeInput';
 function TambahRuangan(props) {
     return (
         <div>
-            <Breadcrumbs 
-                title="Tambah Ruangan"
-            />
+            <Breadcrumbs title="Tambah Ruangan" />
             <div className="box_general padding_bottom">
                 <div className="header_box version_2">
                     <h2><i className="fa fa-file"></i>Informasi Umum</h2>

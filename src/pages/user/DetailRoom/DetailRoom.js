@@ -9,7 +9,7 @@ function DetailRoom(){
             <div>
                 <div>
                     <Header />
-                    <main>
+                        <main>
                         <section className="hero_in tours_detail">
                             <div className="wrapper">
                                 <div className="container">
@@ -22,8 +22,6 @@ function DetailRoom(){
                                 </span>
                             </div>
                         </section>
-
-
                         <div className="bg_color_1"><a href="img/gallery/tour_list_3.jpg" title="Photo title" data-effect="mfp-zoom-in">
                         </a><nav className="secondary_nav sticky_horizontal"><a href="img/gallery/tour_list_3.jpg" title="Photo title" data-effect="mfp-zoom-in">
                             </a><div className="container"><a href="img/gallery/tour_list_3.jpg" title="Photo title" data-effect="mfp-zoom-in">
@@ -428,7 +426,6 @@ function DetailRoom(){
                         {/* /Sign Up Popup */}
             </div>
         </React.Fragment>
-        
     )
 }
 

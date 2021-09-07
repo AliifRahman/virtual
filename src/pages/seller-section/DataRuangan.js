@@ -20,19 +20,12 @@ function DataRuangan(props) {
     }
     return (
         <div>
-            <Breadcrumbs
-                title="Data Ruangan"
-            />
-
+            <Breadcrumbs title="Data Ruangan"/>
             <div className="box_general">
                 <div className="header_box">
                     <h2 className="d-inline-block">Daftar Transaksi</h2>
                     <div id="sbHolder_27633101" className="filter sbHolder">
-                        <Select
-                            options={options}
-                            defaultValue={options[0]}
-                            styles={customStyle}
-                        />
+                        <Select options={options} defaultValue={options[0]} styles={customStyle}/>
                     </div>
                 </div>
                 <div className="list_general">

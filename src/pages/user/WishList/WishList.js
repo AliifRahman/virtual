@@ -228,9 +228,9 @@ function WishList(){
                             {/*form */}
                         </div>
                         {/* /Sign Up Popup */}
-            </div>
-        </React.Fragment>
-    )
-}
+                    </div>
+             </React.Fragment>
+        )
+    }
 
 export default WishList;

@@ -5,9 +5,7 @@ import Tables from '../../components/seller-section/Tables';
 function DataTransaksi(props) {
     return (
         <div>
-            <Breadcrumbs
-                title="Data Transaksi"
-            />
+            <Breadcrumbs title="Data Transaksi"/>
             <Tables />
         </div>
     );

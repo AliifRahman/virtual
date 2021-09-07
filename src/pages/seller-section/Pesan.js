@@ -5,9 +5,7 @@ import CardMessages from '../../components/seller-section/CardMessages';
 function Pesan(props) {
     return (
         <div>
-            <Breadcrumbs 
-                title="Pesan"
-            />
+            <Breadcrumbs title="Pesan" />
             <div className="box_general">
                 <h4>Pesan</h4>
                 <div className="list_general">

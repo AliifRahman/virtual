@@ -1,0 +1,16 @@
+To Do
+
+- fixing code
+- error on home page
+- fix logical issue
+- creating waypoint
+- connect into google api key
+- react Nav-links
+- prettier
+
+
+Conflict
+
+- Main css between admin css
+- Footer and header font color not showing (possible because of 2 same sources)
+- Font styles
