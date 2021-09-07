@@ -233,7 +233,7 @@ function Home(props) {
                 </form>
                 </div>
             </div>
-            <div className="container container-custom margin_80_0 bg_color_1">
+            <div className="container container-custom margin_80_0">
                 <div className="main_title_2">
                 <span><em /></span>
                 <h2>Rekomendasi ruang meeting strategis</h2>
@@ -580,13 +580,5 @@ function Home(props) {
         </React.Fragment>
     );
 }
-
-    //External Link JS
-    document.writeln("<script type='text/javascript' src='assets/js/common_scripts.js'></script>");
-    document.writeln("<script type='text/javascript' src='assets/js/main.js'></script>");
-    document.writeln("<script type='text/javascript' src='assets/assets/validate.js'></script>");
-    document.writeln("<script type='text/javascript' src='assets/js/jquery.flexslider.js'></script>");
-    document.writeln("<script type='text/javascript' src='assets/js/swiper-bundle.min.js'></script>");
-    document.writeln("<script type='text/javascript' src='assets/js/CustomHome.js'></script>");
 
 export default Home;
