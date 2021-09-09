@@ -1170,7 +1170,7 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
   }
 }
 .hero_in.tours_detail:before {
-  background: url(../img/room-1.jpg) center center no-repeat;
+  background: url(../img/hero_in_tours_detail.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1247,7 +1247,7 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
   height: 100%;
 }
 .hero_in .wrapper h1 {
-  color: #fff !important;
+  color: #fff;
   font-size: 42px;
   font-size: 2.625rem;
   text-transform: uppercase;
@@ -3626,7 +3626,7 @@ a.box_feat h3 {
   position: absolute;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.6);
-  left: 20px;
+  right: 20px;
   top: 20px;
   text-transform: uppercase;
   color: #ccc;
@@ -5192,7 +5192,7 @@ span.infobox_rate {
 .bs-wizard > .bs-wizard-step {
   padding: 0;
   position: relative;
-  width: 50%;
+  width: 33.33%;
   float: left;
 }
 .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
@@ -5510,6 +5510,7 @@ ul.cart_details li span {
 }
 #confirm p {
   font-size: 16px !important;
+  font-size: 16px !important/16pxrem;
   margin-bottom: 0;
 }
 
@@ -5619,8 +5620,10 @@ ul.cart_details li span {
   padding: 15% 0;
   width: 100%;
   height: 100%;
+  background-color: black;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
+  font-size: 14px;
   font-size: 0.875rem;
   opacity: 0;
   -moz-transition: all 0.3s ease-in-out;
@@ -8307,7 +8310,7 @@ ul.bullets li:before {
 }
 
 /*-------- 3.7 Sing In Modal --------*/
-#sign-in-dialog, #sign-up-dialog {
+#sign-in-dialog {
   background: #fff;
   padding: 30px;
   padding-top: 0;
@@ -8324,7 +8327,6 @@ ul.bullets li:before {
 
 /* Popup close button*/
 #sign-in-dialog .mfp-close,
-#sign-up-dialog .mfp-close,
 #lang-dialog .mfp-close {
   color: #666;
   background-color: #e4e4e4;
@@ -8340,13 +8342,11 @@ ul.bullets li:before {
 }
 
 #sign-in-dialog .mfp-close:hover,
-#sign-up-dialog .mfp-close:hover,
 #lang-dialog .mfp-close:hover {
   color: #fff;
   background-color: #66676b;
 }
 
-#sign-in-dialog .mfp-close:before, 
 #sign-in-dialog .mfp-close:before {
   font-size: 24px;
   font-family: 'ElegantIcons';
@@ -8376,23 +8376,20 @@ ul.bullets li:before {
   font-weight: 500;
 }
 
-#sign-in-dialog .form-group, 
-#sign-up-dialog .form-group {
+#sign-in-dialog .form-group {
   position: relative;
 }
 
-#sign-in-dialog .form-group input.form-control,
-#sign-up-dialog .form-group input.form-control {
+#sign-in-dialog .form-group input.form-control {
   padding-left: 40px;
 }
 
-#sign-in-dialog .form-group i,
-#sign-up-dialog .form-group i {
+#sign-in-dialog .form-group i {
   font-size: 21px;
   font-size: 1.3125rem;
   position: absolute;
   left: 12px;
-  top: 40px;
+  top: 34px;
   color: #ccc;
   width: 25px;
   height: 25px;
@@ -8400,8 +8397,7 @@ ul.bullets li:before {
   font-weight: 400 !important;
 }
 
-#sign-in-dialog .form-group i.icon_lock_alt,
-#sign-up-dialog .form-group i.icon_lock_alt {
+#sign-in-dialog .form-group i.icon_lock_alt {
   top: 36px;
 }
 
@@ -8462,8 +8458,7 @@ a#forgot {
   font-weight: 500;
 }
 
-.sign-in-wrapper,
-.sign-up-wrapper {
+.sign-in-wrapper {
   position: relative;
   height: 100%;
 }
@@ -9207,3 +9202,86 @@ ul.plan-features {
   }
 }
 
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+  margin-top: 50px;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+  text-align: center;
+}
+
+.testimonials .section-title{
+  text-align: center;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+width: 90px;
+border-radius: 50%;
+margin: -40px 0 0 40px;
+position: relative;
+z-index: 2;
+border: 6px solid #fff;
+}
+
+.testimonials .testimonial-item h3 {
+font-size: 18px;
+font-weight: bold;
+margin: 10px 0 5px 0px;
+color: #111;
+}
+
+.testimonials .testimonial-item h4 {
+font-size: 14px;
+color: #999;
+}
+
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+color: #d8dee1;
+font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+display: inline-block;
+left: -5px;
+position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+display: inline-block;
+right: -5px;
+position: relative;
+top: 10px;
+}
+
+.testimonials .testimonial-item p {
+font-style: italic;
+margin: 0 15px 0 15px;
+padding: 20px 20px 60px 20px;
+background: #f4f6f7;
+position: relative;
+border-radius: 6px;
+position: relative;
+z-index: 1;
+}
+
+.testimonials .swiper-pagination {
+margin-top: 20px;
+position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+width: 12px;
+height: 12px;
+background-color: #fff;
+opacity: 1;
+border: 1px solid #009cea;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+background-color: #009cea;
+}
