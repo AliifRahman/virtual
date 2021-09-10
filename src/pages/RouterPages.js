@@ -13,16 +13,16 @@ import TambahRuangan from './seller-section/TambahRuangan';
 import TransaksiMasuk from './seller-section/TransaksiMasuk';
 import Ulasan from './seller-section/Ulasan';
 
-import MessageAdmin from '../Components/MessageAdmin';
-import NavbarAdmin from '../Components/NavbarAdmin';
-import BookingAdmin from '../Components/BookingAdmin';
-import ListingAdmin from '../Components/ListingAdmin';
-import ReviewsAdmin from '../Components/ReviewsAdmin';
-import BookmarksAdmin from '../Components/BookmarksAdmin';
-import AddlistingAdmin from '../Components/AddlistingAdmin';
-import MyprofileAdmin from '../Components/MyprofileAdmin';
-import ChartsAdmin from '../Components/ChartsAdmin';
-import TablesAdmin from '../Components/TablesAdmin';
+import MessageAdmin from '../pages/admin/MessageAdmin';
+import NavbarAdmin from '../pages/admin/NavbarAdmin';
+import BookingAdmin from '../pages/admin/BookingAdmin';
+import ListingAdmin from '../pages/admin/ListingAdmin';
+import ReviewsAdmin from '../pages/admin/ReviewsAdmin';
+import BookmarksAdmin from '../pages/admin/BookmarksAdmin';
+import AddlistingAdmin from '../pages/admin/AddlistingAdmin';
+import MyprofileAdmin from '../pages/admin/MyprofileAdmin';
+import ChartsAdmin from '../pages/admin/ChartsAdmin';
+import TablesAdmin from '../pages/admin/TablesAdmin';
 
 
 function RouterPages(props) {
