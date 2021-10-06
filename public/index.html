@@ -40,7 +40,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
 
   <!-- Bootstrap core CSS-->
-  <link href="assets/seller-section/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="assets/seller-section/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- Main styles -->
   <!-- <link href="assets/seller-section/css/admin.css" rel="stylesheet"> -->
   
@@ -49,7 +49,7 @@
   <!-- Plugin styles -->
   <link href="assets/seller-section/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <link href="assets/seller-section/vendor/dropzone.css" rel="stylesheet">
-  <link href="assets/seller-section/css/date_picker.css" rel="stylesheet">
+  <!-- <link href="assets/seller-section/css/date_picker.css" rel="stylesheet"> -->
   <!-- Your custom styles -->
   <link href="assets/seller-section/css/custom-seller.css" rel="stylesheet">
 
@@ -62,6 +62,7 @@
 
   <!-- COMMON SCRIPTS -->
   <script src="assets/user/js/common_scripts.js"></script>
+  <script src="assets/user/js/main.js"></script>
   <script src="assets/user/assets/validate.js"></script>
 
   <!-- Seller Section -->
@@ -77,11 +78,15 @@
   <script src="assets/seller-section/vendor/jquery.selectbox-0.2.js"></script>
   <script src="assets/seller-section/vendor/retina-replace.min.js"></script>
   <script src="assets/seller-section/vendor/jquery.magnific-popup.min.js"></script>
+ 
   <!-- Custom scripts for all pages-->
   <script src="assets/seller-section/js/admin.js"></script>
+ 
+
   <!-- Custom scripts for this page-->
+  <link href="assets/user/modernizr_slider.js" rel="stylesheet">
   <script src="assets/seller-section/js/admin-charts.js"></script>
-  <script src="assets/seller-section/vendor/bootstrap-datepicker.js"></script>
+  <!-- <script src="assets/seller-section/vendor/bootstrap-datepicker.js"></script> -->
   <script src="assets/seller-section/js/editor/summernote-bs4.min.js"></script>
   <script src="assets/user/js/swiper-bundle.min.js"></script>
 
@@ -94,6 +99,7 @@
   <script src="assets/user/js/infobox.js"></script>
 
   <script defer src="assets/user/js/jquery.flexslider.js"></script>
+  <script src="assets/user/js/daterangepicker.js"></script>
 
   <script>
     $(window).on('load', function () {
@@ -117,7 +123,27 @@
           $('body').removeClass('loading');
         }
       });
-    </script>
-  </body>
+    });
+  </script>
+  <script>
+    $(function() {
+		'use strict';
+		$('input[name="dates"]').daterangepicker({
+			autoUpdateInput: false,
+			minDate:new Date(),
+			locale: {
+				cancelLabel: 'Clear'
+			}
+		});
+		$('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
+			$(this).val(picker.startDate.format('MM-DD-YY') + ' > ' + picker.endDate.format('MM-DD-YY'));
+		});
+		$('input[name="dates"]').on('cancel.daterangepicker', function(ev, picker) {
+			$(this).val('');
+		});
+	  });
+  </script>
+
+</body>
 
 </html>

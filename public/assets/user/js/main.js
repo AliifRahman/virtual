@@ -1,7 +1,7 @@
 (function ($) {
 
 	"use strict";
-	
+
 	$(window).on('load', function () {
 		$('[data-loader="circle-side"]').fadeOut(); // will first fade out the loading animation
 		$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
@@ -388,14 +388,17 @@
     function close_panel_dropdown() {
 		$('.panel-dropdown').removeClass("active");
     }
+	console.log($('.panel-dropdown a'));
     $('.panel-dropdown a').on('click', function(e) {
+		e.preventDefault();
+		
 		if ( $(this).parent().is(".active") ) {
             close_panel_dropdown();
+			
         } else {
             close_panel_dropdown();
             $(this).parent().addClass('active');
         }
-        e.preventDefault();
     });
 
     // Closes dropdown on click outside the conatainer
@@ -473,21 +476,21 @@
             }
           });
     });
-	
-	$('input[name="dates"]').daterangepicker({
-		autoUpdateInput: false,
-		parentEl: '.scroll-fix',
-		minDate: new Date(),
-		opens: 'left',
-		locale: {
-			cancelLabel: 'Clear'
-		}
-	});
-	$('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
-		$(this).val(picker.startDate.format('MM-DD-YY') + ' > ' + picker.endDate.format('MM-DD-YY'));
-	});
-	$('input[name="dates"]').on('cancel.daterangepicker', function(ev, picker) {
-		$(this).val('');
-	});
+
+	// $('input[name="dates"]').daterangepicker({
+	// 	autoUpdateInput: false,
+	// 	parentEl: '.scroll-fix',
+	// 	minDate: new Date(),
+	// 	opens: 'left',
+	// 	locale: {
+	// 		cancelLabel: 'Clear'
+	// 	}
+	// });
+	// $('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
+	// 	$(this).val(picker.startDate.format('MM-DD-YY') + ' > ' + picker.endDate.format('MM-DD-YY'));
+	// });
+	// $('input[name="dates"]').on('cancel.daterangepicker', function(ev, picker) {
+	// 	$(this).val('');
+	// });
 })(window.jQuery); 
 

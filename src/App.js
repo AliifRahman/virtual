@@ -1,10 +1,11 @@
 import './App.css';
 import RouterPages from './pages/RouterPages';
+import Index from './pages/user/Index/Index';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <RouterPages />
     </div>
   );
 }

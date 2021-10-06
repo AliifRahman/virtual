@@ -17,7 +17,7 @@ function ListRoom(){
                                     <div className="container-fluid">
                                     <div className="row">
                                         <div className="col-10">
-                                        <h4><strong>145</strong> results</h4>
+                                        <h4><strong>12</strong> Hasil pencarian</h4>
                                         </div>
                                         <div className="col-2">
                                         <a href="#0" className="search_map btn_search_map_view" />
@@ -59,14 +59,14 @@ function ListRoom(){
                                         <li>
                                         <div className="switch-field">
                                             <input type="radio" id="all" name="listing_filter" defaultValue="all" defaultChecked />
-                                            <label htmlFor="all">All</label>
+                                            <label htmlFor="all">Semua</label>
                                             <input type="radio" id="popular" name="listing_filter" defaultValue="popular" />
-                                            <label htmlFor="popular">Popular</label>
+                                            <label htmlFor="popular">Populer</label>
                                             <input type="radio" id="latest" name="listing_filter" defaultValue="latest" />
-                                            <label htmlFor="latest">Latest</label>
+                                            <label htmlFor="latest">Terbaru</label>
                                         </div>
                                         </li>
-                                        <li><a className="btn_filt_map" data-toggle="collapse" href="#filters" aria-expanded="false" aria-controls="filters" data-text-swap="Less filters" data-text-original="More filters">More filters</a></li>
+                                        <li><a className="btn_filt_map" data-toggle="collapse" href="#filters" aria-expanded="false" aria-controls="filters" data-text-swap="Less filters" data-text-original="More filters">Lainnya</a></li>
                                     </ul>
                                     </div>
                                     {/* /container */}
@@ -179,153 +179,153 @@ function ListRoom(){
                                     <div className="row no-gutters add_top_20">
                                     <div className="col-lg-6 col-md-6 item-group">
                                         <figure>
-                                        <small>Museum</small>
+                                        <small>Small Virtual Office</small>
                                         <NavLink to="/detailroom"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></NavLink>
                                         </figure>
                                         <div className="wrapper">
                                         <a href="#0" className="wish_bt" />
                                         <h3><NavLink to="/detailroom">Louvre</NavLink></h3>
-                                        <span className="price">From <strong>$54</strong> /per person</span>
+                                        <span className="price">Mulai <strong>Rp. 500.000</strong> /per bulan</span>
                                         </div>
                                         <ul>
                                         <li>
                                             <a href="#0" onclick="onHtmlClick('Marker',2)" className="address">On Map</a>
                                         </li>
                                         <li>
-                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
+                                            <div className="score"><span>Superb<em>20 Reviews</em></span><strong>8.9</strong></div>
                                         </li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-6 col-md-6 item-group">
                                         <figure>
-                                        <small>Museum</small>
-                                        <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
+                                        <small>Medium Virtual Office</small>
+                                        <a href="tour-detail.html"><img src="assets/user/img/room-2.jpg" className="img-fluid" alt width={800} height={533} /></a>
                                         </figure>
                                         <div className="wrapper">
                                         <a href="#0" className="wish_bt" />
-                                        <h3><a href="tour-detail.html">Louvre</a></h3>
-                                        <span className="price">From <strong>$54</strong> /per person</span>
+                                        <h3><a href="tour-detail.html">Adamantine</a></h3>
+                                        <span className="price">Mulai <strong>Rp. 750.000</strong> /per bulan</span>
                                         </div>
                                         <ul>
                                         <li>
                                             <a href="#0" onclick="onHtmlClick('Marker',2)" className="address">On Map</a>
                                         </li>
                                         <li>
-                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
+                                            <div className="score"><span>Superb<em>31 Reviews</em></span><strong>8.1</strong></div>
                                         </li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-6 col-md-6 item-group">
                                         <figure>
-                                        <small>Museum</small>
-                                        <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
+                                        <small>Silver Office</small>
+                                        <a href="tour-detail.html"><img src="assets/user/img/room-3.jpg" className="img-fluid" alt width={800} height={533} /></a>
                                         </figure>
                                         <div className="wrapper">
                                         <a href="#0" className="wish_bt" />
-                                        <h3><a href="tour-detail.html">Louvre</a></h3>
-                                        <span className="price">From <strong>$54</strong> /per person</span>
+                                        <h3><a href="tour-detail.html">Broum</a></h3>
+                                        <span className="price">Mulai <strong>Rp. 500.000</strong> /per bulan</span>
                                         </div>
                                         <ul>
                                         <li>
                                             <a href="#0" onclick="onHtmlClick('Marker',2)" className="address">On Map</a>
                                         </li>
                                         <li>
-                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
+                                            <div className="score"><span>Superb<em>29 Reviews</em></span><strong>9.5</strong></div>
                                         </li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-6 col-md-6 item-group">
                                         <figure>
-                                        <small>Museum</small>
-                                        <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
+                                        <small>Gold Office</small>
+                                        <a href="tour-detail.html"><img src="assets/user/img/room-3.jpg" className="img-fluid" alt width={800} height={533} /></a>
                                         </figure>
                                         <div className="wrapper">
                                         <a href="#0" className="wish_bt" />
-                                        <h3><a href="tour-detail.html">Louvre</a></h3>
-                                        <span className="price">From <strong>$54</strong> /per person</span>
+                                        <h3><a href="tour-detail.html">Brindalin</a></h3>
+                                        <span className="price">Mulai <strong>Rp. 1.200.000</strong> /per bulan</span>
                                         </div>
                                         <ul>
                                         <li>
                                             <a href="#0" onclick="onHtmlClick('Marker',2)" className="address">On Map</a>
                                         </li>
                                         <li>
-                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
+                                            <div className="score"><span>Superb<em>38 Reviews</em></span><strong>8.9</strong></div>
                                         </li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-6 col-md-6 item-group">
                                         <figure>
-                                        <small>Museum</small>
+                                        <small>Diamond Office</small>
                                         <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
                                         </figure>
                                         <div className="wrapper">
                                         <a href="#0" className="wish_bt" />
-                                        <h3><a href="tour-detail.html">Louvre</a></h3>
-                                        <span className="price">From <strong>$54</strong> /per person</span>
+                                        <h3><a href="tour-detail.html">Muller</a></h3>
+                                        <span className="price">Mulai <strong>Rp. 4.500.000</strong> /per bulan</span>
                                         </div>
                                         <ul>
                                         <li>
                                             <a href="#0" onclick="onHtmlClick('Marker',2)" className="address">On Map</a>
                                         </li>
                                         <li>
-                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
+                                            <div className="score"><span>Superb<em>11 Reviews</em></span><strong>9.1</strong></div>
                                         </li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-6 col-md-6 item-group">
                                         <figure>
-                                        <small>Museum</small>
-                                        <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
+                                        <small>Copper Office</small>
+                                        <a href="tour-detail.html"><img src="assets/user/img/room-2.jpg" className="img-fluid" alt width={800} height={533} /></a>
                                         </figure>
                                         <div className="wrapper">
                                         <a href="#0" className="wish_bt" />
-                                        <h3><a href="tour-detail.html">Louvre</a></h3>
-                                        <span className="price">From <strong>$54</strong> /per person</span>
+                                        <h3><a href="tour-detail.html">Grinder</a></h3>
+                                        <span className="price">Mulai <strong>Rp. 300.000</strong> /per bulan</span>
                                         </div>
                                         <ul>
                                         <li>
                                             <a href="#0" onclick="onHtmlClick('Marker',2)" className="address">On Map</a>
                                         </li>
                                         <li>
-                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
+                                            <div className="score"><span>Superb<em>46 Reviews</em></span><strong>7.9</strong></div>
                                         </li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-6 col-md-6 item-group">
                                         <figure>
-                                        <small>Museum</small>
-                                        <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
+                                        <small>Common Office</small>
+                                        <a href="tour-detail.html"><img src="assets/user/img/room-3.jpg" className="img-fluid" alt width={800} height={533} /></a>
                                         </figure>
                                         <div className="wrapper">
                                         <a href="#0" className="wish_bt" />
-                                        <h3><a href="tour-detail.html">Louvre</a></h3>
-                                        <span className="price">From <strong>$54</strong> /per person</span>
+                                        <h3><a href="tour-detail.html">Adinasara</a></h3>
+                                        <span className="price">Mulai <strong>Rp. 200.000</strong> /per bulan</span>
                                         </div>
                                         <ul>
                                         <li>
                                             <a href="#0" onclick="onHtmlClick('Marker',2)" className="address">On Map</a>
                                         </li>
                                         <li>
-                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
+                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>7.7</strong></div>
                                         </li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-6 col-md-6 item-group">
                                         <figure>
-                                        <small>Museum</small>
-                                        <a href="tour-detail.html"><img src="assets/user/img/room-1.jpg" className="img-fluid" alt width={800} height={533} /></a>
+                                        <small>Ore Office</small>
+                                        <a href="tour-detail.html"><img src="assets/user/img/room-2.jpg" className="img-fluid" alt width={800} height={533} /></a>
                                         </figure>
                                         <div className="wrapper">
                                         <a href="#0" className="wish_bt" />
                                         <h3><a href="tour-detail.html">Louvre</a></h3>
-                                        <span className="price">From <strong>$54</strong> /per person</span>
+                                        <span className="price">Mulai <strong>Rp. 800.000</strong> /per bulan</span>
                                         </div>
                                         <ul>
                                         <li>
                                             <a href="#0" onclick="onHtmlClick('Marker',2)" className="address">On Map</a>
                                         </li>
                                         <li>
-                                            <div className="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong></div>
+                                            <div className="score"><span>Superb<em>27 Reviews</em></span><strong>8.9</strong></div>
                                         </li>
                                         </ul>
                                     </div>

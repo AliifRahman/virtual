@@ -5,7 +5,7 @@ function Tables(props) {
         <div>
             <div class="card mb-3">
                 <div class="card-header">
-                    <i class="fa fa-table"></i> Data Transaksi</div>
+                    <i class="fa fa-table"></i> Data Penyewa</div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -14,53 +14,43 @@ function Tables(props) {
                                     <th>Nama</th>
                                     <th>Perusahaan</th>
                                     <th>Ruangan</th>
-                                    <th>Umur</th>
-                                    <th>Tanggal Mulai</th>
-                                    <th>Harga</th>
+                                    <th>Jumlah Ruangan</th>
+                                    <th>Mulai Sewa</th>
+                                    <th>Total Bayar</th>
                                 </tr>
                             </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>Nama</th>
-                                    <th>Perusahaan</th>
-                                    <th>Ruangan</th>
-                                    <th>Umur</th>
-                                    <th>Tanggal Mulai</th>
-                                    <th>Harga</th>
-                                </tr>
-                            </tfoot>
                             <tbody>
                                 <tr>
                                     <td>Tiger Nixon</td>
                                     <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
+                                    <td>A. Yani</td>
+                                    <td>2</td>
+                                    <td>21 Agustus 2021 </td>
+                                    <td>Rp. 5.000.000</td>
                                 </tr>
                                 <tr>
-                                    <td>Garrett Winters</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>63</td>
-                                    <td>2011/07/25</td>
-                                    <td>$170,750</td>
+                                    <td>Aram</td>
+                                    <td>PT Maju Bersama</td>
+                                    <td>A. Diponegoro</td>
+                                    <td>3</td>
+                                    <td>2 September 2021 </td>
+                                    <td>Rp. 7.200.000</td>
                                 </tr>
                                 <tr>
-                                    <td>Ashton Cox</td>
-                                    <td>Junior Technical Author</td>
-                                    <td>San Francisco</td>
-                                    <td>66</td>
-                                    <td>2009/01/12</td>
-                                    <td>$86,000</td>
+                                    <td>Arandi saklama</td>
+                                    <td>Langgeng jaya</td>
+                                    <td>Panglima Sudirman</td>
+                                    <td>1</td>
+                                    <td>15 Januari 2021 </td>
+                                    <td>Rp. 41.000.000</td>
                                 </tr>
                                 <tr>
-                                    <td>Cedric Kelly</td>
-                                    <td>Senior Javascript Developer</td>
-                                    <td>Edinburgh</td>
-                                    <td>22</td>
-                                    <td>2012/03/29</td>
-                                    <td>$433,060</td>
+                                    <td>Proxila Synderen</td>
+                                    <td>Going Upwards</td>
+                                    <td>Keputih</td>
+                                    <td>5</td>
+                                    <td>30 Mei 2021 </td>
+                                    <td>Rp. 120.000.000</td>
                                 </tr>
                             </tbody>
                         </table>

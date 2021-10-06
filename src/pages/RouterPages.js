@@ -14,6 +14,7 @@ import TransaksiMasuk from './seller-section/TransaksiMasuk';
 import Ulasan from './seller-section/Ulasan';
 import DetailRoom from './user/DetailRoom/DetailRoom';
 import Index from './user/Index/Index';
+import home from './user/Home/Home';
 import ListRoom from './user/ListRoom/ListRoom';
 import Cart from './user/Purchase/Cart';
 import Complete from './user/Purchase/Complete';

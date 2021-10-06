@@ -5510,7 +5510,7 @@ ul.cart_details li span {
 }
 #confirm p {
   font-size: 16px !important;
-  font-size: 16px !important/16pxrem;
+  font-size: 16px !important;
   margin-bottom: 0;
 }
 

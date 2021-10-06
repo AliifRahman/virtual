@@ -85,6 +85,6 @@ function Home() {
     );
 }
 
-// document.writeln("<link href='assets/seller-section/css/admin.css' rel='stylesheet'>");
+document.writeln("<link href='assets/seller-section/css/admin.css' rel='stylesheet'>");
 
 export default Home;

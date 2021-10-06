@@ -4,11 +4,9 @@ function CardRoom(props) {
     return (
         <li>
             <figure><img src="assets/seller-section/img/item_1.jpg" alt="" /></figure>
-            <small>Hotel</small>
-            <h4>Hotel Mariott</h4>
-            <p>Lorem ipsum dolor sit amet, est ei idque voluptua copiosae, pro detracto disputando reformidans at, ex
-                vel suas eripuit. Vel alii zril maiorum ex, mea id sale eirmod epicurei. Sit te possit senserit, eam
-                alia veritus maluisset ei, id cibo vocent ocurreret per....</p>
+            <small>Ruangan Medium</small>
+            <h4>Panglima Sudirman</h4>
+            <p>Ruangan yang cocok bagi perusahaan yang baru memulai bisnisnya dengan kapasitas karyawan maksimal 20 orang dan tamu maksimal...</p>
             <button type="button" class="btn_1 gray mb-4" data-toggle="modal" data-target="#exampleModal">
                 <i class="fa fa-fw fa-eye"></i>Detail Ruangan
             </button>
